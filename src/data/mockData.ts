@@ -128,7 +128,7 @@ export const mockBookings: Booking[] = [
     vehicleId: '1',
     pickupDateTime: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(), // 5 days ago
     dropoffDateTime: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days ago
-    status: 'Completed',
+    status: 'Completed' as 'Completed',
     totalPrice: 150,
     userName: 'John Doe',
   },
@@ -137,7 +137,7 @@ export const mockBookings: Booking[] = [
     vehicleId: '2',
     pickupDateTime: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString(), // In 2 days
     dropoffDateTime: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(), // In 5 days
-    status: 'Confirmed',
+    status: 'Confirmed' as 'Confirmed',
     totalPrice: 210,
     userName: 'Jane Smith',
   },
@@ -146,7 +146,7 @@ export const mockBookings: Booking[] = [
     vehicleId: '4',
     pickupDateTime: new Date().toISOString(),
     dropoffDateTime: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(), // In 7 days
-    status: 'Ongoing',
+    status: 'Ongoing' as 'Ongoing',
     totalPrice: 840,
     userName: 'Alice Brown',
   }
